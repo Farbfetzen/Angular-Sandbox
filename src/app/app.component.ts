@@ -7,21 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Sandbox';
-  navTabs = [
-    {
-      link: 'a',
-      label: 'A-Component',
-    },
-    {
-      link: 'b',
-      label: 'B-Component',
-    },
-    {
-      link: 'c',
-      label: 'C-Component',
-    },
+  navTabs: NavTab[] = [
+    { link: '/a', label: 'AAA' },
+    { link: '/b', label: 'BBB' },
+    { link: '/c', label: 'CCC' },
   ];
-  // Sorgt dafür, dass der falsche Tab gehighlighted wird, wenn man per URL eine andere Komponente ansteuert.
-  // Muss irgendwie an den aktuellen Pfad kommen.
-  activeTab = this.navTabs[0];
+}
+
+interface NavTab {
+  link: string;
+  label: string;
 }

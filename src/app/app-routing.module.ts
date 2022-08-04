@@ -6,7 +6,7 @@ import { BComponent } from './b/b.component';
 import { CComponent } from './c/c.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'a' },
+  { path: '', pathMatch: 'full', redirectTo: '/c' },
   { path: 'a', component: AComponent },
   { path: 'b', component: BComponent },
   { path: 'c', component: CComponent },
