@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -10,7 +11,12 @@ import { CComponent } from './c/c.component';
 
 @NgModule({
   declarations: [AppComponent, AComponent, BComponent, CComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    MatTabsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
